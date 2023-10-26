@@ -58,8 +58,6 @@ document.getElementById('formulario').addEventListener('submit', (event) => {
 
     if (!errorName.textContent && !errorEmail.textContent && !errorConstrasena.textContent) {
 
-    console.log('enviado')
-
         db.collection("users").add({
             nombre: nombreEntrada.value,
             email: emailEntrada.value,
